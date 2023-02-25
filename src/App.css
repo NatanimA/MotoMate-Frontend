@@ -52,8 +52,8 @@ ul {
   background-color: rgb(222, 101, 101);
   width: 5rem;
   height: 10rem;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
