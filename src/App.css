@@ -18,9 +18,8 @@ ul {
   text-decoration: none;
   list-style-type: none;
   margin-top: 3rem;
-  color: white;
+  color: black;
   cursor: pointer;
-  background-color: #749a24;
 }
 
 .navbar {
@@ -37,11 +36,24 @@ ul {
 .menu-close {
   position: relative;
   display: block;
-  top: -15rem;
+  top: -18rem;
   color: #749a24;
-  width: 110px;
-  left: 149px;
-  height: 50px;
+  width: 120px;
+  left: 200px;
+  height: 70px;
   background-color: #749a24;
-  border-radius: 15px 50px 50px 50px;
+  padding-left: 2rem;
+  border-radius: 1px 50px 50px 1px;
+  border: 10px solid #749a24;
+}
+
+.social-icons,
+.fa-brands {
+  background-color: rgb(222, 101, 101);
+  width: 5rem;
+  height: 10rem;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+margin-top: 1rem;
 }
