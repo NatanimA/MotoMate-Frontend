@@ -7,6 +7,7 @@ import { faPinterest } from '@fortawesome/free-brands-svg-icons';
 
 
 const SocialIcons = () => (
+  <>
   <div>
     <FontAwesomeIcon icon={faTwitter} />
   </div>
@@ -19,6 +20,7 @@ const SocialIcons = () => (
   <div>
     <FontAwesomeIcon icon={faPinterest} />
   </div>
+  </>
 );
 
 export default SocialIcons;
