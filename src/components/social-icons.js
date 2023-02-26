@@ -1,37 +1,24 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fontawesome/react-fontawesome';
+import { faTwitter } from '@fontawesome/free-brands-svg-icons';
+import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
+import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { faPinterest } from '@fortawesome/free-brands-svg-icons';
 
-const SocialIcons = () => {
-  return (
-    <>
-      <ul>
-        <li>
-          <a aria-label="github" href="#" target="_blank">
-            <i className="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a aria-label="linkedin" href="#" target="_blank">
-            <i className="fa-brands fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a aria-label="angellist" href="#" target="_blank">
-            <i className="fa-brands fa-angellist"></i>
-          </a>
-        </li>
-        <li>
-          <a aria-label="twitter" href="#" target="_blank">
-            <i className="fa-brands fa-twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a aria-label="medium" href="#" target="_blank">
-            <i className="fa-brands fa-medium"></i>
-          </a>
-        </li>
-      </ul>
-    </>
-  );
-}
+
+const SocialIcons = () => (
+  <div>
+    <FontAwesomeIcon icon={faTwitter} />
+  </div>
+  <div>
+    <FontAwesomeIcon icon={faFacebookSquare} />
+  </div>
+  <div>
+    <FontAwesomeIcon icon={faGoogle} />
+  </div>
+  <div>
+    <FontAwesomeIcon icon={faPinterest} />
+  </div>
+);
 
 export default SocialIcons;
