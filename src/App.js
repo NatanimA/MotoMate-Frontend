@@ -1,7 +1,12 @@
+import React from 'react';
+import Navbar from './Components/Navbar/Navbar';
+import MainPage from './Components/Navbar/Mainpage';
+
 function App() {
   return (
-    <div className="App">
-
+    <div>
+      <Navbar />
+      <MainPage />
     </div>
   );
 }
