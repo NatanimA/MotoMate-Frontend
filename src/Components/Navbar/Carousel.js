@@ -1,5 +1,7 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+
 
 // Import Swiper styles
 import 'swiper/css';
@@ -16,7 +18,6 @@ const cars = [
         model: "BMW 3 Series",
         year: 2021,
         info: "The BMW 3 Series is a compact executive car manufactured by the German automaker BMW since May 1975. It is the successor to the 02 Series and has been produced in six different generations."
-
     },
     {
         id: 2,
@@ -41,7 +42,6 @@ const cars = [
         model: "BMW 3 Series",
         year: 2021,
         info: "The BMW 3 Series is a compact executive car manufactured by the German automaker BMW since May 1975. It is the successor to the 02 Series and has been produced in six different generations."
-
     },
     {
         id: 4,
@@ -66,7 +66,6 @@ const cars = [
         model: "BMW 3 Series",
         year: 2021,
         info: "The BMW 3 Series is a compact executive car manufactured by the German automaker BMW since May 1975. It is the successor to the 02 Series and has been produced in six different generations."
-
     },
     {
         id: 6,
@@ -85,11 +84,37 @@ const cars = [
 const Carousel = () => {
     return (
       <Swiper
-        spaceBetween={50}
-        slidesPerView={3}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
+        spaceBetween={5}
+        slidesPerView={2}
       >
+        {cars.map((car) => (
+            <SwiperSlide key={car.id}>
+                <div className="card">
+                    <div className="card-image">
+                        <img src={car.image} alt={car.model} />
+                    </div>
+                    <div className="card-content">
+                        <div className="card-title">
+                            <h3>{car.model}</h3>
+                            <p>{car.year}</p>
+                        </div>
+                        <div className="card-info">
+                            <p>{car.info}</p>
+                        </div>
+                        <div className="card-footer">
+                            <div className="card-footer-left">
+                                <p>Finance Fee</p>
+                                <p>{car.financeFee}</p>
+                            </div>
+                            <div className="card-footer-right">
+                                <p>Purchase Fee</p>
+                                <p>{car.purchaseFee}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </SwiperSlide>
+        ))}
         
       </Swiper>
     );
