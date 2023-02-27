@@ -29,13 +29,13 @@ const Navbar = () => {
         <NavLinks />
         <SocialLinks />
         <button
-          className="text-gray-500  bg-white hover:text-gray-600 focus:outline-none relative -top-6 inset-44 sm:-top-6 sm:inset-56"
+          className="text-gray-500 w-8 h-8 bg-white hover:text-gray-600 focus:outline-none relative -top-8 inset-44 sm:-top-8 sm:inset-56"
           onClick={handleToggle}
         >
           {isOpen ? (
-            <BsFillArrowLeftSquareFill size={30} />
+            <BsFillArrowLeftSquareFill size={32} />
           ) : (
-            <BsFillArrowRightSquareFill size={30} />
+            <BsFillArrowRightSquareFill size={32} />
           )}
         </button>
       </nav>
