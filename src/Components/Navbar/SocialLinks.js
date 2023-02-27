@@ -3,7 +3,7 @@ import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const SocialLinks = () => {
   return (
-    <div className="flex justify-center mt-6">
+    <div className="flex justify-center mt-56">
       <a href="#" className="mr-3">
         <FaFacebook size={24} />
       </a>
