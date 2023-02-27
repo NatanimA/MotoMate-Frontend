@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { MdClose, MdMenu } from 'react-icons/md';
 import NavLinks from './NavLinks';
 import SocialLinks from './SocialLinks';
