@@ -13,7 +13,7 @@ export const fetchMotorcycle = createAsyncThunk(
       id: motorcycle.id,
       name: motorcycle.name,
       description: motorcycle.description,
-      image: motorcycle.img_url,
+      img_url: motorcycle.img_url,
       model_year: motorcycle.model_year,
       price: motorcycle.price,
       engine: motorcycle.engine,
