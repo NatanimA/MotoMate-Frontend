@@ -1,9 +1,49 @@
-@import url('https://use.typekit.net/iqv5qbb.css');
+@import url("https://use.typekit.net/iqv5qbb.css");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-  font-family: 'basic-sans', sans-serif;
+  font-family: "basic-sans", sans-serif;
+}
+
+.main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  align-self: center;
+  margin-top: 1rem;
+}
+
+.main-top-head {
+  font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #ff0000d9);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  align-self: center;
+  margin-top: 1rem;
+  background-color: aquamarine;
+  height: 550px;
+}
+
+.main-bot-head {
+  background-image: linear-gradient(to right, #19186e, #004396, #00608c, #00765a, #1a8711);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 22px;
+  font-weight: 500;
 }

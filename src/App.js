@@ -1,11 +1,12 @@
 import React from 'react';
 import Navbar from './Components/Navbar/Navbar';
+import MainPage from './Components/Navbar/Mainpage';
 
 function App() {
   return (
     <div>
       <Navbar />
-      <main>{/* Main component will be added */}</main>
+      <MainPage />
     </div>
   );
 }
