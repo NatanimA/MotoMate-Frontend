@@ -23,8 +23,13 @@ const Navbar = () => {
             : '-translate-x-44 transition-transform duration-500 sm:-translate-x-56 sm:transition-transform sm:duration-500'
         }`}
       >
+        <div className="flex items-center justify-between h-16 p-4 border-b border-gray-200 mt-10">
+          <img src={Logo} alt="Logo" />
+        </div>
+        <NavLinks />
+        <SocialLinks />
         <button
-          className="text-gray-500  bg-white hover:text-gray-600 focus:outline-none relative top-10 inset-44 sm:top-10 sm:inset-56"
+          className="text-gray-500  bg-white hover:text-gray-600 focus:outline-none relative -top-6 inset-44 sm:-top-6 sm:inset-56"
           onClick={handleToggle}
         >
           {isOpen ? (
@@ -33,11 +38,6 @@ const Navbar = () => {
             <BsFillArrowRightSquareFill size={30} />
           )}
         </button>
-        <div className="flex items-center justify-between h-16 p-4 border-b border-gray-200">
-          <img src={Logo} alt="Logo" />
-        </div>
-        <NavLinks />
-        <SocialLinks />
       </nav>
     </div>
   );
