@@ -102,12 +102,12 @@ const Carousel = () => {
         spaceBetween={39}
         slidesPerView={3}
         navigation
-        pagination={{ clickable: true }}
+        className='mt-20'
       >
-        <div className='carasouel'>
+        <div className='slide'>
         {cars.map((car) => (
-            <SwiperSlide key={car.id}>
-                <div className="card">
+            <SwiperSlide className='' key={car.id}>
+                <div className="card flex flex-col items-center text-center">
                     <div className="card-image">
                         <img src={car.image} alt={car.model} />
                     </div>
@@ -119,7 +119,17 @@ const Carousel = () => {
                             <p>{car.info}</p>
                         </div>
                         <div className="card-footer">
-                           <SocialLinks />
+                            <div className='carousel-social-links flex justify-center'>
+                                <a href="#" className="mr-3">
+                                    <FaFacebook size={24} />
+                                </a>
+                                <a href="#" className="mr-3">
+                                    <FaTwitter size={24} />
+                                </a>
+                                <a href="#">
+                                    <FaInstagram size={24} />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
