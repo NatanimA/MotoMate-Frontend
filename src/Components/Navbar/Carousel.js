@@ -1,10 +1,22 @@
 // Import Swiper React components
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import {
+    Navigation, Pagination, Scrollbar, A11y,
+  } from 'swiper';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+// Import Swiper and modules
+
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 
 // Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/navigation';
 
 const cars = [
     {
@@ -84,8 +96,11 @@ const cars = [
 const Carousel = () => {
     return (
       <Swiper
+      modules={[Navigation, Pagination]}
         spaceBetween={5}
-        slidesPerView={2}
+        slidesPerView={1}
+        navigation={true}
+        pagination={{ clickable: true }}
       >
         {cars.map((car) => (
             <SwiperSlide key={car.id}>
