@@ -6,6 +6,7 @@ import {
   } from 'swiper';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 // Import Swiper and modules
+import SocialLinks from './SocialLinks';
 
 
 import 'swiper/css';
@@ -97,11 +98,13 @@ const Carousel = () => {
     return (
       <Swiper
       modules={[Navigation, Pagination]}
-        spaceBetween={5}
-        slidesPerView={1}
-        navigation={true}
+      loop
+        spaceBetween={39}
+        slidesPerView={3}
+        navigation
         pagination={{ clickable: true }}
       >
+        <div className='carasouel'>
         {cars.map((car) => (
             <SwiperSlide key={car.id}>
                 <div className="card">
@@ -111,25 +114,18 @@ const Carousel = () => {
                     <div className="card-content">
                         <div className="card-title">
                             <h3>{car.model}</h3>
-                            <p>{car.year}</p>
                         </div>
                         <div className="card-info">
                             <p>{car.info}</p>
                         </div>
                         <div className="card-footer">
-                            <div className="card-footer-left">
-                                <p>Finance Fee</p>
-                                <p>{car.financeFee}</p>
-                            </div>
-                            <div className="card-footer-right">
-                                <p>Purchase Fee</p>
-                                <p>{car.purchaseFee}</p>
-                            </div>
+                           <SocialLinks />
                         </div>
                     </div>
                 </div>
             </SwiperSlide>
         ))}
+        </div>
         
       </Swiper>
     );

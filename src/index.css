@@ -45,3 +45,15 @@
   font-size: 22px;
   font-weight: 500;
 }
+
+.card-image {
+  width: 20vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
