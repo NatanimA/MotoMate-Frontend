@@ -7,13 +7,13 @@ const NavLinks = () => {
         <a href="#">Home</a>
       </li>
       <li className="pl-4 py-2 hover:bg-gray-100">
-        <a href="#">Reservations</a>
+        <a href="/Reservations">Reservations</a>
       </li>
       <li className="pl-4 py-2 hover:bg-gray-100">
-        <a href="#">Add a Motorcycle</a>
+        <a href="/Add-Motorcycles">Add a Motorcycles</a>
       </li>
       <li className="pl-4 py-2 hover:bg-gray-100">
-        <a href="#">Contact</a>
+        <a href="/Contact">Contact</a>
       </li>
     </ul>
   );
