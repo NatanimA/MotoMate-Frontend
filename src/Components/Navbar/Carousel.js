@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import {
     Navigation, Pagination, Scrollbar, A11y,
   } from 'swiper';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+// import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 // Import Swiper and modules
 
 
