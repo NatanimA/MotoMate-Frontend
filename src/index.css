@@ -23,7 +23,6 @@
   font-weight: 600;
   background-image: linear-gradient(to left, #553c9a, #ff0000d9);
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
 }
 
@@ -42,8 +41,19 @@
 .main-bot-head {
   background-image: linear-gradient(to right, #19186e, #004396, #00608c, #00765a, #1a8711);
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
   font-size: 22px;
   font-weight: 500;
+}
+
+.card-image {
+  width: 20vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

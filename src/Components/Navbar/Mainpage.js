@@ -1,4 +1,6 @@
 import React from "react";
+import Carousel from "./Carousel";
+
 
 const MainPage = () => {
   return (
@@ -7,7 +9,9 @@ const MainPage = () => {
       <div className="main-top-head">LATEST MODELS</div>
       <div className="main-bot-head">PLEASE SELECT THE MODEL</div>
       </div>
-      <div className="carousel">Display the CAROUSEL in this Blue</div>
+      <div>
+        <Carousel />
+      </div>
     </>
   );
 };
