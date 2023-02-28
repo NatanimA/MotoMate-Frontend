@@ -30,7 +30,7 @@ const cars = [
         deposit: "$100",
         model: "BMW 3 Series",
         year: 2021,
-        info: "The BMW 3 Series is a compact executive car manufactured by the German automaker BMW since May 1975. It is the successor to the 02 Series and has been produced in six different generations."
+        info: "The BMW 3 Series is a compact executive car manufactured by the German automaker BMW since May 1975."
     },
     {
         id: 2,
@@ -54,7 +54,7 @@ const cars = [
         deposit: "$100",
         model: "BMW 3 Series",
         year: 2021,
-        info: "The BMW 3 Series is a compact executive car manufactured by the German automaker BMW since May 1975. It is the successor to the 02 Series and has been produced in six different generations."
+        info: "The BMW 3 Series is a compact executive car manufactured by the German automaker BMW since May 1975."
     },
     {
         id: 4,
@@ -78,7 +78,7 @@ const cars = [
         deposit: "$100",
         model: "BMW 3 Series",
         year: 2021,
-        info: "The BMW 3 Series is a compact executive car manufactured by the German automaker BMW since May 1975. It is the successor to the 02 Series and has been produced in six different generations."
+        info: "The BMW 3 Series is a compact executive car manufactured by the German automaker BMW since May 1975."
     },
     {
         id: 6,
@@ -107,15 +107,35 @@ const Carousel = () => {
         <div className='slide'>
         {cars.map((car) => (
             <SwiperSlide className='' key={car.id}>
-                <div className="card flex flex-col items-center text-center">
+                <div className="card flex flex-col items-center text-center gap-y-10">
                     <div className="card-image">
                         <img src={car.image} alt={car.model} />
                     </div>
                     <div className="card-content">
                         <div className="card-title">
-                            <h3>{car.model}</h3>
+                            <h3 className='font-extrabold tracking-wider uppercase'>{car.model}</h3>
                         </div>
-                        <div className="card-info">
+                        <div className='dotted-line flex justify-center text-4xl text-gray-200 gap-x-1'>
+                            <div>.</div>
+                            <div>.</div>
+                            <div>.</div>
+                            <div>.</div>
+                            <div>.</div>
+                            <div>.</div>
+                            <div>.</div>
+                            <div>.</div>
+                            <div>.</div>
+                            <div>.</div>
+                            <div>.</div>
+                            <div>.</div>
+                            <div>.</div>
+                            <div>.</div>
+                            <div>.</div>
+                            <div>.</div>
+                            <div>.</div>
+                            <div>.</div>
+                        </div>
+                        <div className="card-info text-gray-300 mt-4 mb-5">
                             <p>{car.info}</p>
                         </div>
                         <div className="card-footer">
