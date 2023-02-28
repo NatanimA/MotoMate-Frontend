@@ -6,6 +6,7 @@ import {
   Routes, Route,
 
 } from 'react-router-dom';
+import Reservation from './Components/Navbar/Reservation';
 
 
 const App = () => {
@@ -14,7 +15,8 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<MainPage />} />
-        
+        <Route path="/resevation" element={<Reservation />} />
+
       </Routes>
     </Router>
 
