@@ -14,7 +14,7 @@ const NavLinks = () => {
         <Link to="/addmotor">Add a Motorcycle</Link>
       </li>
       <li className="pl-4 py-2 hover:bg-gray-100">
-        <Link to="/contact">Contact</Link>
+        <Link to="/details">Contact</Link>
       </li>
     </ul>
   );
