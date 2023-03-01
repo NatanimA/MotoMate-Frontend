@@ -9,7 +9,7 @@ import Logo from '../../images/logo.png';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = React.useState(true);
+  const [isOpen, setIsOpen] = React.useState(false);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
