@@ -79,6 +79,7 @@ const Details = () => {
                     <div className='discover'>
                         <p>Discover more about this car</p>
                         <button>spiral</button>
+                        <img alt="Color Mode icon" srcSet="https://img.icons8.com/fluency/512/color-mode.png 2x, https://img.icons8.com/fluency/256/color-mode.png 1x" src="https://img.icons8.com/fluency/512/color-mode.png" style={{width: "100px", height: "100px"}}></img>
                         <button>Configure</button>
                     </div>
                 </div>
