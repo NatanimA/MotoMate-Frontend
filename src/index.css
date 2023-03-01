@@ -39,7 +39,15 @@
 }
 
 .main-bot-head {
-  background-image: linear-gradient(to right, #19186e, #004396, #00608c, #00765a, #1a8711);
+  background-image:
+    linear-gradient(
+      to right,
+      #19186e,
+      #004396,
+      #00608c,
+      #00765a,
+      #1a8711
+    );
   color: transparent;
   -webkit-background-clip: text;
   font-size: 22px;
@@ -56,4 +64,71 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.reservations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  align-self: center;
+  width: auto;
+  margin-left: 15%;
+  margin-right: 15%;
+  gap: 1rem;
+}
+
+.bg-img {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  background-image: url("./images/reservation-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.top-head {
+  font-size: 40px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.bot-head {
+  border-top: 2px solid black;
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.loc-input {
+  width: 120px;
+  height: 3rem;
+  border: 1px solid black;
+  border-radius: 20%/50%;
+  padding-left: 25px;
+  color: black;
+}
+
+.book-now {
+  margin-left: 1rem;
+  width: 120px;
+  height: 3rem;
+  border-radius: 20%/50%;
+  border: 1px solid white;
+  color: white;
+  background-color: black;
 }
