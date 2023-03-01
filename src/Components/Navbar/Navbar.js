@@ -6,6 +6,7 @@ import {
 import NavLinks from './NavLinks';
 import SocialLinks from './SocialLinks';
 import Logo from '../../images/logo.png';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(true);

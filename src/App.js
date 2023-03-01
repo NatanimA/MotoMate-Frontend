@@ -1,14 +1,25 @@
 import React from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import MainPage from './Components/Navbar/Mainpage';
+import {
+  BrowserRouter as Router,
+  Routes, Route,
 
-function App() {
+} from 'react-router-dom';
+import Reservation from './Components/Navbar/Reservation';
+
+
+const App = () => {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <MainPage />
-    </div>
-  );
-}
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/reservation" element={<Reservation />} />
+      </Routes>
+    </Router>
+
+  )
+  }
 
 export default App;

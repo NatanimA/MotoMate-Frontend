@@ -1,19 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const NavLinks = () => {
   return (
     <ul className="mt-4 text-lg sm:text-2xl">
       <li className="pl-4 py-2 hover:bg-gray-100">
-        <a href="#">Home</a>
+        <Link to="/">Home</Link>
       </li>
       <li className="pl-4 py-2 hover:bg-gray-100">
-        <a href="#">Reservations</a>
+        <Link to="/reservation">Reservations</Link>
       </li>
       <li className="pl-4 py-2 hover:bg-gray-100">
-        <a href="#">Add a Motorcycle</a>
+        <Link to="/addmotor">Add a Motorcycle</Link>
       </li>
       <li className="pl-4 py-2 hover:bg-gray-100">
-        <a href="#">Contact</a>
+        <Link to="/contact">Contact</Link>
       </li>
     </ul>
   );
