@@ -1,4 +1,9 @@
 import React from 'react';
+// import gear svg from fontawesome
+
+import {FaCog, FaChevronCircleRight} from 'react-icons/fa';
+
+
 
 
 const cardetails =
@@ -75,8 +80,11 @@ const Details = () => {
                         <img alt="Color Mode icon" srcSet="https://img.icons8.com/fluency/512/color-mode.png 2x, https://img.icons8.com/fluency/256/color-mode.png 1x" src="https://img.icons8.com/fluency/512/color-mode.png" style={{width: "100px", height: "100px"}}></img>
                         </div>
                         <div className="dd flex justify-end">
-                            <div className='bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full text-right'>
+                            <div className='bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full text-right flex gap-2 justify-center items-center cursor-pointer
+'>
+                                <FaCog className='inline' />
                                 Configure
+                                <FaChevronCircleRight className='inline' />
                             </div>
                             
                         </div>
