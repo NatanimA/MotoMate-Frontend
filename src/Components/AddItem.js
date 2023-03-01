@@ -23,7 +23,6 @@ const AddItem = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(details);
-        //set details to empty value
         setDetails({
             model: "",
             year: "",
@@ -37,7 +36,6 @@ const AddItem = () => {
 
     return (
         <div className="add-item">
-        <h1>Add Item</h1>
         <div className="grid min-h-screen place-items-center">
   <div className="w-11/12 p-12 bg-white sm:w-8/12 md:w-1/2 lg:w-5/12">
     <h1 className="text-xl font-semibold">Hello there ?, <span className="font-normal">please fill in the new car item and continue.</span></h1>
