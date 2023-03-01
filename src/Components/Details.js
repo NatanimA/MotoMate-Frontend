@@ -69,10 +69,12 @@ const Details = () => {
                                     </div>
                                
                     
-                    <div className='discover flex flex-col items-center mt-5'>
-                        <p>Discover more about this car</p>
+                    <div className='discover mt-5'>
+                        <p className='text-right'>Discover more about this car</p>
+                        <div className='img flex justify-center'>
                         <img alt="Color Mode icon" srcSet="https://img.icons8.com/fluency/512/color-mode.png 2x, https://img.icons8.com/fluency/256/color-mode.png 1x" src="https://img.icons8.com/fluency/512/color-mode.png" style={{width: "100px", height: "100px"}}></img>
-                        <button>Configure</button>
+                        </div>
+                        <p className='text-right'>Configure</p>
                     </div>
                 </div>
             </div>
