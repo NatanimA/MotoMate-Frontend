@@ -75,6 +75,12 @@ const Details = () => {
                             </div>
                         </div>
                     </div>
+                    <p>5.9% APR Representative</p>
+                    <div className='discover'>
+                        <p>Discover more about this car</p>
+                        <button>spiral</button>
+                        <button>Configure</button>
+                    </div>
                 </div>
             </div>
         </div>
