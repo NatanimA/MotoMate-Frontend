@@ -1,6 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const AddItem = () => {
+
+    const [details, setDetails] = useState({
+        model: "",
+        year: "",
+        price: "",
+        engine: "",
+        fueltype: "",
+        imageurl: "",
+        description: ""
+    })
+
     return (
         <div className="add-item">
         <h1>Add Item</h1>
@@ -22,7 +33,7 @@ const AddItem = () => {
       <input id="image" type="text" name="image" placeholder="image URL" autoComplete="email" className="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
       <div className="col-span-2">
         <label htmlFor="description" className="block mt-2 text-xs font-semibold text-gray-600 uppercase">Description</label>
-      <textarea cols="30" rows="4" id='description' className="resize-none block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" placeholder="Message"></textarea>
+      <textarea cols="30" rows="4" id='description' className="resize-none block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" placeholder="Car Description"></textarea>
     </div>
       <button type="submit" className="w-full py-3 mt-6 font-medium tracking-widest text-white uppercase bg-black shadow-lg focus:outline-none hover:bg-gray-900 hover:shadow-none">
         Add new car
