@@ -24,6 +24,7 @@ const Signin = () => {
       <button type="submit" className="w-full py-3 mt-6 font-medium tracking-widest text-white uppercase bg-black shadow-lg focus:outline-none hover:bg-gray-900 hover:shadow-none">
         Sign In
       </button>
+      <Link to='/signup' className="flex justify-between inline-block mt-4 text-xs text-gray-500 cursor-pointer hover:text-black">Not Signup yet?</Link>
     </form>
   </div>
 </div>
