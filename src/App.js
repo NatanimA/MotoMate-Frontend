@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import MainPage from './Components/Navbar/Mainpage';
@@ -10,6 +11,7 @@ import Reservation from './Components/Navbar/Reservation';
 import Details from './Components/Details';
 
 
+import './index.css';
 
 const App = () => {
   return (
@@ -21,8 +23,7 @@ const App = () => {
         <Route path="/details" element={<Details />} />
       </Routes>
     </Router>
-
-  )
-  }
+  );
+};
 
 export default App;
