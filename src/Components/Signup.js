@@ -32,7 +32,7 @@ const Signup = () => {
       <label htmlFor="username" className="block mt-2 text-xs font-semibold text-gray-600 uppercase">Username</label>
       <input id="username" type="text" name="username" placeholder="username" autoComplete="email" className="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" value={details.username} onChange={handleChange} required />
       <button type="submit" className="w-full py-3 mt-6 font-medium tracking-widest text-white uppercase bg-black shadow-lg focus:outline-none hover:bg-gray-900 hover:shadow-none">
-        Sign up
+        Sign Up
       </button>
       <Link to='/signin' className="flex justify-between inline-block mt-4 text-xs text-gray-500 cursor-pointer hover:text-black">Already registered?</Link>
     </form>
