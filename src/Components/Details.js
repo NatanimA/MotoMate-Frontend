@@ -19,18 +19,16 @@ const cardetails =
 const Details = () => {
     return (
         <div>
-            <div className="container flex mt-36">
+            <div className="container flex mt-36 pl-10">
                 <div className='carimage basis-2/3'>
                     <img src={cardetails.image} />
                 </div>
-                <div className='carinfo flex flex-col items-end'>
-                    <h2>{cardetails.model}</h2>
+                <div className='carinfo flex flex-col ml-5'>
+                    <div className='flex flex-col items-end'>
+                    <h1 className='font-extrabold tracking-wide uppercase text-5xl'>{cardetails.model}</h1>
                     <p>${cardetails.deposit} deposit upon any Moto Purchase</p>
-                    <div className="flex flex-col">
-                        <div className="overflow-x-auto sm:mx-0.5 lg:mx-0.5">
-                            <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
-                                <div className="overflow-hidden">
-                                    <table className="min-w-full">
+            
+                                    <table className="min-w-full mt-10">
                                         <tbody>
                                             <tr className="bg-gray-100 border-b">
                                                 <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
@@ -65,13 +63,13 @@ const Details = () => {
                                                 </td>
                                             </tr>
                                         </tbody>
+                                        <p className='font-extrabold mt-5'>5.9% APR Representative</p>
                                     </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p>5.9% APR Representative</p>
-                    <div className='discover'>
+
+                                    </div>
+                               
+                    
+                    <div className='discover flex flex-col items-center mt-5'>
                         <p>Discover more about this car</p>
                         <img alt="Color Mode icon" srcSet="https://img.icons8.com/fluency/512/color-mode.png 2x, https://img.icons8.com/fluency/256/color-mode.png 1x" src="https://img.icons8.com/fluency/512/color-mode.png" style={{width: "100px", height: "100px"}}></img>
                         <button>Configure</button>
