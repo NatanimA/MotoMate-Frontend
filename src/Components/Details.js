@@ -70,11 +70,16 @@ const Details = () => {
                                
                     
                     <div className='discover mt-5'>
-                        <p className='text-right'>Discover more about this car</p>
+                        <p className='text-right font-extrabold'>DISCOVER MORE ABOUT THE CAR</p>
                         <div className='img flex justify-center'>
                         <img alt="Color Mode icon" srcSet="https://img.icons8.com/fluency/512/color-mode.png 2x, https://img.icons8.com/fluency/256/color-mode.png 1x" src="https://img.icons8.com/fluency/512/color-mode.png" style={{width: "100px", height: "100px"}}></img>
                         </div>
-                        <p className='text-right'>Configure</p>
+                        <div className="dd flex justify-end">
+                            <div className='bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full text-right'>
+                                Configure
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
