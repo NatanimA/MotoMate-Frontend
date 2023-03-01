@@ -7,6 +7,8 @@ import {
 
 } from 'react-router-dom';
 import Reservation from './Components/Navbar/Reservation';
+import Details from './Components/Details';
+
 
 
 const App = () => {
@@ -16,6 +18,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/reservation" element={<Reservation />} />
+        <Route path="/details" element={<Details />} />
       </Routes>
     </Router>
 
