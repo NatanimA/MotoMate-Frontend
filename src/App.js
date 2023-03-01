@@ -9,8 +9,6 @@ import {
 } from 'react-router-dom';
 import Reservation from './Components/Navbar/Reservation';
 import Details from './Components/Details';
-
-
 import './index.css';
 
 const App = () => {
