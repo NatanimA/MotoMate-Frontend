@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const NavLinks = () => {
   return (
@@ -15,6 +15,16 @@ const NavLinks = () => {
       </li>
       <li className="pl-4 py-2 hover:bg-gray-100">
         <Link to="/addmotor">Add a Motorcycle</Link>
+      </li>
+
+      <li className="pl-4 py-2 hover:bg-gray-100">
+        <Link to="/additem">Add a Car</Link>
+      </li>
+      <li className="pl-4 py-2 hover:bg-gray-100">
+        <Link to="/signup">Signup</Link>
+      </li>
+      <li className="pl-4 py-2 hover:bg-gray-100">
+        <Link to="/signin">Signin</Link>
       </li>
       <li className="pl-4 py-2 hover:bg-gray-100">
         <Link to="/details">Contact</Link>
