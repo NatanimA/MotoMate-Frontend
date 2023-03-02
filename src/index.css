@@ -154,4 +154,8 @@
     text-align: center;
     justify-content: center;
   }
+
+  .card-image {
+    width: 70vw;
+  }
 }
