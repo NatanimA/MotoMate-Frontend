@@ -100,7 +100,15 @@ const Carousel = () => {
       modules={[Navigation, Pagination]}
       loop
         spaceBetween={39}
-        slidesPerView={2}
+        slidesPerView={3}
+        breakpoints={{
+            500: {
+                slidesPerView:1},
+                640: {
+                    slidesPerView:2},
+                    1000: {
+                        slidesPerView:3},
+        }}
         navigation
         className='mt-20'
       >
