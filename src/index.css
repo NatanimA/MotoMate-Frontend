@@ -133,7 +133,7 @@
   background-color: black;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   * {
     padding: 0;
     margin: 0;
@@ -156,6 +156,12 @@
   }
 
   .card-image {
-    width: 70vw;
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card-image {
+    width: 45vw;
   }
 }
