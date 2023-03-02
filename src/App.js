@@ -10,7 +10,6 @@ import {
 import Reservation from './Components/Navbar/Reservation';
 import Details from './Components/Details';
 import AddItem from './Components/AddItem';
-
 import './index.css';
 
 const App = () => {
