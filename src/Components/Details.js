@@ -24,7 +24,7 @@ const cardetails =
 const Details = () => {
     return (
         <div>
-            <div className="container flex mt-36 pl-10">
+            <div className="container flex mt-10 pl-10">
                 <div className='carimage basis-2/3'>
                     <img src={cardetails.image} />
                 </div>
