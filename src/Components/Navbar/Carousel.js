@@ -115,7 +115,7 @@ const Carousel = () => {
                         <div className="card-title">
                             <h3 className='font-extrabold tracking-wider uppercase'>{car.model}</h3>
                         </div>
-                        <div className='dotted-line flex justify-center text-4xl text-gray-200 gap-x-1'>
+                        <div className='dotted-line flex justify-center text-4xl text-gray-400 gap-x-1'>
                             <div>.</div>
                             <div>.</div>
                             <div>.</div>
@@ -135,7 +135,7 @@ const Carousel = () => {
                             <div>.</div>
                             <div>.</div>
                         </div>
-                        <div className="card-info text-gray-300 mt-4 mb-5">
+                        <div className="card-info mt-4 mb-5">
                             <p>{car.info}</p>
                         </div>
                         <div className="card-footer">
