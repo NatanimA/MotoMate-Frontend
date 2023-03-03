@@ -133,7 +133,7 @@
   background-color: black;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   * {
     padding: 0;
     margin: 0;
@@ -156,12 +156,12 @@
   }
 
   .card-image {
-    width: 75vw;
+    width: 45vw;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
   .card-image {
-    width: 45vw;
+    width: 75vw;
   }
 }
