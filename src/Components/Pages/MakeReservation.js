@@ -64,7 +64,7 @@ function MakeReservation() {
       <h1 className="text-4xl font-bold mb-4 text-gray-100">
         BOOK A TEST-RIDE
       </h1>
-      <p className="text-lg text-gray-200 mb-8">
+      <p className="text-lg text-gray-200 mb-8 p-2">
         Please use the form below to book a test ride in your city.
       </p>
       <form

@@ -40,8 +40,10 @@ const AddMotorcycle = () => {
   }
 
   return (
-    <div className="flex justify-center flex-col items-center w-full">
-      <h2 className="sm:text-3xl text-2xl font-bold mb-6">Add a Motorcycle</h2>
+    <div className="flex justify-center flex-col items-center w-full p-4">
+      <h2 className="sm:text-3xl text-2xl font-bold mb-6 pt-4">
+        Add a Motorcycle
+      </h2>
       <form
         onSubmit={handleSubmit}
         className="shadow-xl rounded-xl px-8 pt-6 pb-8 bg-gray-300 bg-opacity-70 w-3/4 sm:w-2/4"

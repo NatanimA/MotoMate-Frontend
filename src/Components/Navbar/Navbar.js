@@ -44,7 +44,10 @@ const Navbar = () => {
             isOpen ? 'translate-x-0' : '-translate-x-full'
           }`}
         >
-          <button className="fixed top-2 -right-8" onClick={toggleNavbar}>
+          <button
+            className="fixed top-0 -right-12 py-2 px-2 bg-white rounded-r-2xl shadow-xl"
+            onClick={toggleNavbar}
+          >
             {isOpen ? <IoMdClose size={32} /> : <IoMdMenu size={32} />}
           </button>
           <div className="flex p-2">
