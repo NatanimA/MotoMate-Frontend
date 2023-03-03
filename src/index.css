@@ -19,7 +19,15 @@
 }
 
 .main-top-head {
-  font-size: 70px;
+  font-size: 60px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #ff0000d9);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.res-top-head {
+  font-size: 60px;
   font-weight: 600;
   background-image: linear-gradient(to left, #553c9a, #ff0000d9);
   color: transparent;
@@ -66,6 +74,10 @@
   object-fit: cover;
 }
 
+.card {
+  margin-bottom: 2rem;
+}
+
 .reservations {
   display: flex;
   flex-direction: column;
@@ -77,6 +89,16 @@
   margin-left: 15%;
   margin-right: 15%;
   gap: 1rem;
+}
+
+.my-reservations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  align-self: center;
+  margin-top: 1rem;
 }
 
 .bg-img {
