@@ -1,4 +1,5 @@
 @import url('https://use.typekit.net/iqv5qbb.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,7 +7,7 @@
 * {
   font-family: 'new-hero', sans-serif;
 }
-
+/* stylelint-disable */
 #reservation-page {
   background: linear-gradient(
       45deg,
@@ -19,3 +20,4 @@
   height: 100svh;
   width: 100svw;
 }
+/* stylelint-enable */
