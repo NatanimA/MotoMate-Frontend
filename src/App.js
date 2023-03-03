@@ -14,6 +14,7 @@ import Signin from './Components/Signin';
 import Signup from './Components/Signup';
 
 import './index.css';
+import { cars } from './Components/Navbar/Carousel';
 
 const App = () => {
   return (
@@ -22,7 +23,13 @@ const App = () => {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/reservation" element={<Reservation />} />
-        <Route path="/details" element={<Details />} />
+        {cars.map((car) => (
+          <Route
+            key={car.id}
+            path={`/cars/${car.id}`}
+            element={<Details car={car} />}
+            />
+          ))}
         <Route path="/additem" element={<AddItem />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
