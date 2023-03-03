@@ -24,8 +24,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/reservation" element={<Reservation />} />
-        <Route path="/my-reservations" element={<MyReservation />} />
-    
+        <Route path="/my-reservations" element={<MyReservation />} />       
         {cars.map((car) => (
           <Route
             key={car.id}
