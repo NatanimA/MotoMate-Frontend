@@ -24,10 +24,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/reservation" element={<Reservation />} />
-<<<
+
         <Route path="/my-reservations" element={<MyReservation />} />
       
-====
+
         {cars.map((car) => (
           <Route
             key={car.id}
@@ -35,7 +35,6 @@ const App = () => {
             element={<Details car={car} />}
             />
           ))}
->
         <Route path="/additem" element={<AddItem />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
