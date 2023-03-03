@@ -22,7 +22,7 @@ const App = () => {
         {cars.map((car) => (
           <Route
             key={car.id}
-            path={`/details/${car.model}`}
+            path={`/cars/${car.id}`}
             element={<Details car={car} />}
             />
           ))}

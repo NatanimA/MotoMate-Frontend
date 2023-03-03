@@ -23,16 +23,16 @@ const cardetails =
     }
 
 
-const Details = () => {
+const Details = (car) => {
     return (
         <div>
             <div className="container flex mt-36 pl-10">
                 <div className='carimage basis-2/3'>
-                    <img src={cardetails.image} />
+                    <img src={car.car.image} />
                 </div>
                 <div className='carinfo flex flex-col ml-5'>
                     <div className='flex flex-col items-end'>
-                    <h1 className='font-extrabold tracking-wide uppercase text-5xl'>{cardetails.model}</h1>
+                    <h1 className='font-extrabold tracking-wide uppercase text-5xl'>{car.car.model}</h1>
                     <p>${cardetails.deposit} deposit upon any Moto Purchase</p>
             
                                     <table className="min-w-full mt-10">
@@ -42,7 +42,7 @@ const Details = () => {
                                                     Finance Fee
                                                 </td>
                                                 <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                                                ${cardetails.financeFee}
+                                                ${car.car.financeFee}
                                                 </td>
                                             </tr>
                                             <tr className="bg-white border-b">
@@ -50,7 +50,7 @@ const Details = () => {
                                                     Option to purchase fee
                                                 </td>
                                                 <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                                                    ${cardetails.purchaseFee}
+                                                    ${car.car.purchaseFee}
                                                 </td>
                                             </tr>
                                             <tr className="bg-gray-100 border-b">
@@ -58,7 +58,7 @@ const Details = () => {
                                                     Total amount payable
                                                 </td>
                                                 <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                                                    ${cardetails.total}
+                                                    ${car.car.total}
                                                 </td>
                                             </tr>    
                                             <tr className="bg-white border-b">
@@ -66,7 +66,7 @@ const Details = () => {
                                                     Duration
                                                 </td>
                                                 <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                                                    {cardetails.duration} Months
+                                                    {car.car.duration} Months
                                                 </td>
                                             </tr>
                                         </tbody>

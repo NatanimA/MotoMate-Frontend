@@ -1,5 +1,6 @@
 // Import Swiper React components
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {
     Navigation, Pagination, Scrollbar, A11y,
@@ -18,7 +19,6 @@ import 'swiper/css/scrollbar';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Link } from 'react-router-dom';
 
 export const cars = [
     {
@@ -114,8 +114,9 @@ const Carousel = () => {
       >
         <div className='slide'>
         {cars.map((car) => (
-            <Link to={`/car/${car.id}`} key={car.id}>
+            
             <SwiperSlide className='' key={car.id}>
+                 <Link to={`/cars/${car.id}`} key={car.id}>
                 <div className="card flex flex-col items-center text-center gap-y-10">
                     <div className="card-image">
                         <img src={car.image} alt={car.model} />
@@ -162,8 +163,9 @@ const Carousel = () => {
                         </div>
                     </div>
                 </div>
+                </Link>
             </SwiperSlide>
-            </Link>
+            
         ))}
         </div>
         
