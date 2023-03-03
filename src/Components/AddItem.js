@@ -13,11 +13,8 @@ const AddItem = () => {
     })
 
     const handleChange = (e) => {
-
         const {name, value} = e.target;
-
         setDetails({...details, [name]: value})
-
     }
 
     const handleSubmit = (e) => {

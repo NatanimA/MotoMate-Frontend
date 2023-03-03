@@ -7,7 +7,7 @@ import {
   Routes, Route,
 
 } from 'react-router-dom';
-import Reservation from './Components/Navbar/Reservation';
+import BookTestRide from './Components/Navbar/BookTestRide';
 import MyReservation from './Components/Navbar/MyReservations';
 import Details from './Components/Details';
 import AddItem from './Components/AddItem';
@@ -23,7 +23,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/reservation" element={<Reservation />} />
+        <Route path="/booktestride" element={<BookTestRide />} />
         <Route path="/my-reservations" element={<MyReservation />} />       
         {cars.map((car) => (
           <Route

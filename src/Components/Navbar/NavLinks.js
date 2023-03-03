@@ -8,7 +8,7 @@ const NavLinks = () => {
         <Link to="/">Home</Link>
       </li>
       <li className="pl-4 py-2 hover:bg-gray-100">
-        <Link to="/reservation">Reservations</Link>
+        <Link to="/booktestride">Book Test Ride</Link>
       </li>
       <li className="pl-4 py-2 hover:bg-gray-100">
         <Link to="/my-reservations">My Reservations</Link>
