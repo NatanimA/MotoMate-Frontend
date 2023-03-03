@@ -6,11 +6,13 @@ function Login() {
   const [alert, setAlert] = useState('');
   const navigate = useNavigate();
 
-  const createUser = (e) => {
-    e.preventDefault();
+  const createUser = (event) => {
+    event.preventDefault();
+
+    const name = document.querySelector('#name').value.trim();
 
     const user = {
-      name,
+      name: name,
     };
 
     const userData = {
@@ -32,22 +34,23 @@ function Login() {
     setTimeout(() => {
       setAlert('');
       navigate('/motorcycles');
+      window.location.reload();
     }, 1500);
   };
   return (
     <div className="flex flex-col items-center">
       <form
         onSubmit={createUser}
-        className="flex flex-col bg-gray-300 p-4 gap-4 rounded-2xl"
+        className="flex flex-col bg-gray-300 p-8 gap-4 rounded-2xl shadow-lg"
       >
-        <h2 className="text-2xl font-bold mb-4">Login</h2>
+        <h2 className="text-2xl font-bold text-center">Login</h2>
         <label htmlFor="name" className="hidden">
           Name:
         </label>
         <input
           id="name"
           type="text"
-          className="p-2 border rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
+          className="py-2 px-4 border rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent"
           placeholder="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
@@ -56,12 +59,12 @@ function Login() {
 
         <button
           type="submit"
-          className="bg-cyan-900 hover:bg-cyan-800 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          className="bg-cyan-900 hover:bg-cyan-800 text-white py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
         >
           Submit
         </button>
       </form>
-      {alert && <span className="text-red-500 mt-4">{alert}</span>}
+      {alert && <span className="text-red-600 mt-2">{alert}</span>}
     </div>
   );
 }

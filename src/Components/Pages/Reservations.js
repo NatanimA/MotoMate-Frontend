@@ -34,7 +34,8 @@ const Reservations = () => {
       <div className="flex flex-col items-center justify-center h-screen p-2">
         <h1 className="text-3xl font-bold mb-4">Sorry!</h1>
         <p className="text-lg text-gray-600 mb-8">
-          Looks like you're not logged in yet. Please login to access this page.
+          Looks like you&apos;re not logged in yet. Please login to access this
+          page.
         </p>
       </div>
     );
@@ -83,7 +84,7 @@ const Reservations = () => {
             </div>
             <div className="flex justify-end">
               <button
-                className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-2"
+                className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full mt-2"
                 onClick={() => handleDeleteReservation(reservation.id)}
               >
                 Cancel Reservation

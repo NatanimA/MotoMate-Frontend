@@ -21,7 +21,8 @@ const DeleteMotorcycles = () => {
       <div className="flex flex-col items-center justify-center h-screen p-2">
         <h1 className="text-3xl font-bold mb-4">Sorry!</h1>
         <p className="text-lg text-gray-600 mb-8">
-          Looks like you're not logged in yet. Please login to access this page.
+          Looks like you&apos;re not logged in yet. Please login to access this
+          page.
         </p>
       </div>
     );
@@ -54,7 +55,7 @@ const DeleteMotorcycles = () => {
                 ${motorcycle.price}
               </p>
               <button
-                className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
                 onClick={() => handleDelete(motorcycle.id)}
               >
                 Delete
