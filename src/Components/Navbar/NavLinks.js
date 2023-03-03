@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
+// eslint-disable-next-line react/prop-types
 const NavLinks = ({ handleClose }) => {
   const handleLogout = () => {
     localStorage.removeItem('name');
@@ -18,7 +19,6 @@ const NavLinks = ({ handleClose }) => {
   useEffect(() => {
     const userId = localStorage.getItem('id');
     setIsLoggedIn(!!userId);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [localStorage.getItem('id')]);
 
   return (
