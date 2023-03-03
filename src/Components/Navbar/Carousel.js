@@ -19,7 +19,7 @@ import 'swiper/css/scrollbar';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-const cars = [
+export const cars = [
     {
         id: 1,
         image: "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=915&q=80",

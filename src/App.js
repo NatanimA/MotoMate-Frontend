@@ -10,6 +10,7 @@ import {
 import Reservation from './Components/Navbar/Reservation';
 import Details from './Components/Details';
 import './index.css';
+import { cars } from './Components/Navbar/Carousel';
 
 const App = () => {
   return (
@@ -18,7 +19,13 @@ const App = () => {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/reservation" element={<Reservation />} />
-        <Route path="/details" element={<Details />} />
+        {cars.map((car) => (
+          <Route
+            key={car.id}
+            path={`/details/${car.model}`}
+            element={<Details car={car} />}
+            />
+          ))}
       </Routes>
     </Router>
   );

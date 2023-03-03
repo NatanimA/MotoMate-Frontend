@@ -1,4 +1,5 @@
 import React from 'react';
+import { cars } from './Navbar/Carousel';
 // import gear svg from fontawesome
 
 import {FaCog, FaChevronCircleRight} from 'react-icons/fa';
