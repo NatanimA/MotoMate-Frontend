@@ -26,11 +26,11 @@ const cardetails =
 const Details = (car) => {
     return (
         <div>
-            <div className="container flex mt-36 pl-10">
+            <div className="container flex flex-col lg:flex-row mt-20 md:pl-10">
                 <div className='carimage basis-2/3'>
                     <img src={car.car.image} />
                 </div>
-                <div className='carinfo flex flex-col ml-5'>
+                <div className='carinfo flex flex-col ml-5 mt-5 lg:mt-0'>
                     <div className='flex flex-col items-end'>
                     <h1 className='font-extrabold tracking-wide uppercase text-5xl'>{car.car.model}</h1>
                     <p>${cardetails.deposit} deposit upon any Moto Purchase</p>
