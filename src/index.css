@@ -234,4 +234,14 @@
     font-size: 26px;
     padding-bottom: 1rem;
   }
+
+  .top-head {
+    margin-top: 1rem;
+    font-size: 26px;
+  }
+
+  .bot-head {
+    font-size: 17px;
+    margin-bottom: 1rem;
+  }
 }
