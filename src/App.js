@@ -7,7 +7,6 @@ import AddMotorcycle from './Components/Pages/AddMotorcycle';
 import Reservations from './Components/Pages/Reservations';
 import MakeReservation from './Components/Pages/MakeReservation';
 import MotorcycleDetails from './Components/Pages/MotorcycleDetails';
-import Login from './Components/Pages/Register';
 
 const PageNotFound = () => {
   return (
