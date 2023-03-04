@@ -20,23 +20,41 @@ function Login() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(user),
     };
+
     fetch('http://localhost:3000/api/v1/register', userData)
       .then((response) => response.json())
       .then((data) => {
-        localStorage.setItem('id', data.id);
-        localStorage.setItem('name', data.name);
-        setAlert('Logged in. Redirecting to main page.');
-        return data;
+        if (data.error) {
+          // User already exists, log them in
+          fetch(`http://localhost:3000/api/v1/users?name=${name}`)
+            .then((response) => response.json())
+            .then((data) => {
+              localStorage.setItem('id', data[0].id);
+              localStorage.setItem('name', data[0].name);
+              setAlert('Logged in. Redirecting to main page.');
+              setTimeout(() => {
+                setAlert('');
+                navigate('/motorcycles');
+                window.location.reload();
+              }, 1500);
+            })
+            .catch((error) => console.error(error));
+        } else {
+          // New user created
+          localStorage.setItem('id', data.id);
+          localStorage.setItem('name', data.name);
+          setAlert('Logged in. Redirecting to main page.');
+          setTimeout(() => {
+            setAlert('');
+            navigate('/motorcycles');
+            window.location.reload();
+          }, 1500);
+        }
+        setName('');
       })
       .catch((error) => console.error(error));
-
-    setName('');
-    setTimeout(() => {
-      setAlert('');
-      navigate('/motorcycles');
-      window.location.reload();
-    }, 1500);
   };
+
   return (
     <div className="flex flex-col items-center">
       <form
