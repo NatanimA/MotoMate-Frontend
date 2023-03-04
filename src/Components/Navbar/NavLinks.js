@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 
 // eslint-disable-next-line react/prop-types
-const NavLinks = ({ handleClose }) => {
+const NavLinks = ({ toggleNavbar }) => {
   const handleLogout = () => {
     localStorage.removeItem('name');
     localStorage.removeItem('id');
@@ -27,7 +27,7 @@ const NavLinks = ({ handleClose }) => {
   };
 
   return (
-    <ul className="mt-4 w-full text-lg sm:text-xl" onClick={handleClose}>
+    <ul className="mt-4 w-full text-lg sm:text-xl" onClick={toggleNavbar}>
       <li
         className={`pl-4 py-2 ${
           isActive('/motorcycles')
