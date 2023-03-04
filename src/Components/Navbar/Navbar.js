@@ -1,46 +1,66 @@
-import React from 'react';
-import {
-  BsFillArrowRightSquareFill,
-  BsFillArrowLeftSquareFill,
-} from 'react-icons/bs';
+import React, { useState, useEffect, useRef } from 'react';
+import { IoMdMenu, IoMdClose } from 'react-icons/io';
 import NavLinks from './NavLinks';
 import SocialLinks from './SocialLinks';
 import Logo from '../../images/logo.png';
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const navRef = useRef(null);
 
-  const handleToggle = () => {
+  const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleClickOutside = (event) => {
+    if (navRef.current && !navRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className="flex">
-      <nav
-        className={`fixed flex flex-col left-0 top-0 w-44 sm:w-56 h-screen bg-white shadow-lg z-50 ${
-          isOpen
-            ? 'translate-x-0 transition-transform duration-500 sm:translate-x-0 sm:transition-transform sm:duration-500'
-            : '-translate-x-44 transition-transform duration-500 sm:-translate-x-56 sm:transition-transform sm:duration-500'
-        }`}
-      >
-        <div className="flex items-center justify-between h-16 p-4 border-b border-gray-200 mt-10">
+    <>
+      <nav className="hidden sm:block fixed left-0 top-0 w-56 h-screen bg-white shadow-2xl">
+        <div className="flex p-2">
           <img src={Logo} alt="Logo" />
         </div>
         <NavLinks />
         <SocialLinks />
-        <button
-          className="text-gray-500 w-8 h-8 bg-white hover:text-gray-600 focus:outline-none relative -top-8 inset-44 sm:-top-8 sm:inset-56"
-          onClick={handleToggle}
-        >
-          {isOpen ? (
-            <BsFillArrowLeftSquareFill size={32} />
-          ) : (
-            <BsFillArrowRightSquareFill size={32} />
-          )}
-        </button>
+        <p className="text-xs sm:text-sm text-gray-500 fixed bottom-6 left-10">
+          © 2023 MotoMate
+        </p>
       </nav>
-    </div>
+      <div className="sm:hidden">
+        <nav
+          ref={navRef}
+          className={`fixed left-0 top-0 w-56 h-screen z-50 bg-white shadow-2xl transform transition-all duration-300 ${
+            isOpen ? 'translate-x-0' : '-translate-x-full'
+          }`}
+        >
+          <button
+            className="fixed top-0 -right-12 py-2 px-2 bg-white rounded-r-2xl shadow-xl"
+            onClick={toggleNavbar}
+          >
+            {isOpen ? <IoMdClose size={32} /> : <IoMdMenu size={32} />}
+          </button>
+          <div className="flex p-2">
+            <img src={Logo} alt="Logo" />
+          </div>
+          <NavLinks toggleNavbar={toggleNavbar} />
+          <SocialLinks />
+          <p className="text-xs sm:text-sm text-gray-500 fixed bottom-6 left-10">
+            © 2023 MotoMate
+          </p>
+        </nav>
+      </div>
+    </>
   );
 };
 

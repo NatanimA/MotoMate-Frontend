@@ -1,14 +1,17 @@
 import { configureStore } from '@reduxjs/toolkit';
+import { combineReducers } from 'redux';
+import thunk from 'redux-thunk';
 import motorcyclesReducer from './motorcycles';
 import reservationsReducer from './reservations';
-import userReducer from './users'
+
+const rootReducer = combineReducers({
+  motorcycles: motorcyclesReducer,
+  reservations: reservationsReducer,
+});
 
 const store = configureStore({
-  reducer: {
-    motorcycles: motorcyclesReducer,
-    reservations: reservationsReducer,
-    users: userReducer
-  },
+  reducer: rootReducer,
+  middleware: [thunk],
 });
 
 export default store;
