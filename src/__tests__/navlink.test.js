@@ -2,10 +2,6 @@ import renderer from 'react-test-renderer'
 
 import { BrowserRouter } from 'react-router-dom'
 
-import userEvent from '@testing-library/user-event'
-
-import { render, screen } from '@testing-library/react';
-
 import NavLinks from '../Components/Navbar/NavLinks'
 
 describe("Tests Navbar component",() => {
