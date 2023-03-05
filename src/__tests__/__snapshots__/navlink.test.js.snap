@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests Navbar component Should render Navbar Component 1`] = `
+<ul
+  className="mt-4 w-full text-lg sm:text-xl"
+>
+  <li
+    className="pl-4 py-2 hover:bg-cyan-900 hover:text-white"
+  >
+    <a
+      className=""
+      href="/motorcycles"
+      onClick={[Function]}
+    >
+      Motorcycles
+    </a>
+  </li>
+  <li
+    className="pl-4 py-2 hover:bg-cyan-900 hover:text-white"
+  >
+    <a
+      className=""
+      href="/reservations"
+      onClick={[Function]}
+    >
+      My Reservations
+    </a>
+  </li>
+  <li
+    className="pl-4 py-2 hover:bg-cyan-900 hover:text-white"
+  >
+    <a
+      className=""
+      href="/add-motorcycle"
+      onClick={[Function]}
+    >
+      Add a Motorcycle
+    </a>
+  </li>
+  <li
+    className="pl-4 py-2 hover:bg-cyan-900 hover:text-white"
+  >
+    <a
+      className=""
+      href="/delete-motorcycle"
+      onClick={[Function]}
+    >
+      Delete Motorcycle
+    </a>
+  </li>
+  <li
+    className="pl-4 py-2 hover:bg-cyan-900 hover:text-white"
+  >
+    <a
+      className=""
+      href="/login"
+      onClick={[Function]}
+    >
+      Login
+    </a>
+  </li>
+</ul>
+`;
