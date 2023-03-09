@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { IoMdMenu, IoMdClose } from 'react-icons/io';
 import NavLinks from './NavLinks';
 import SocialLinks from './SocialLinks';
-import Logo from '../../Images/logo.png';
+import Logo from '/media/ashwin/DATA/Main Projects/MotoMate-Frontend/src/Images/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
