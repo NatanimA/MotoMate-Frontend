@@ -1,14 +1,20 @@
-import renderer from 'react-test-renderer'
+import React from 'react';
 
-import { BrowserRouter } from 'react-router-dom'
+import renderer from 'react-test-renderer';
 
-import NavLinks from '../Components/Navbar/NavLinks'
+import { BrowserRouter } from 'react-router-dom';
 
-describe("Tests Navbar component",() => {
-    it("Should render Navbar Component",()=>{
-        const tree = renderer.create(<BrowserRouter>
-            <NavLinks />
-        </BrowserRouter>).toJSON()
-        expect(tree).toMatchSnapshot()
-    })
-})
+import NavLinks from '../Components/Navbar/NavLinks';
+
+describe('Tests Navbar component', () => {
+  it('Should render Navbar Component', () => {
+    const tree = renderer
+      .create(
+        <BrowserRouter>
+          <NavLinks />
+        </BrowserRouter>,
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
