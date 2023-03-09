@@ -68,7 +68,7 @@
 ## Kanban Board
 
 - [MotoMate Kanban Board](https://github.com/users/NatanimA/projects/9)
-- [Initial state of Kanbar Board](https://user-images.githubusercontent.com/66979348/220647414-7891ac40-e1fb-4fba-8d65-036edc117516.JPG)
+- [Initial state of Kanban Board](https://user-images.githubusercontent.com/66979348/220647414-7891ac40-e1fb-4fba-8d65-036edc117516.JPG)
 - 4 team members worked on this project.
 
 ## 💻 Getting Started <a name="getting-started"></a>
