@@ -30,7 +30,7 @@ export const fetchMotorcycle = createAsyncThunk(GET_MOTORCYCLE, async () => {
 
 export const addMotorcycle = (motorcycle) => (dispatch) => {
   axios
-    .post('http://localhost:3000/api/v1/motorcycles', motorcycle)
+    .post('https://motomate-api.herokuapp.com/api/v1/motorcycles', motorcycle)
     .then((res) => {
       dispatch({
         type: ADD_MOTORCYCLE,
