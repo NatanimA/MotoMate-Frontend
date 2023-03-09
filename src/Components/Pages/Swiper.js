@@ -29,7 +29,7 @@ const SwiperComponent = ({ motorcycles }) => {
     >
       {motorcycles.map((motorcycle) => (
         <SwiperSlide key={motorcycle.id}>
-          <div className="flex flex-col bg-gradient-to-r from-indigo-500 to-blue-300 w-3/4 ml-10 items-center text-center rounded-3xl">
+          <div className="flex flex-col bg-gray-300 w-3/4 ml-10 items-center text-center rounded-3xl">
             <Link
               to={`/motorcycle-details/${motorcycle.id}`}
               onClick={() =>
