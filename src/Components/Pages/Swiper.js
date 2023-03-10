@@ -29,7 +29,7 @@ const SwiperComponent = ({ motorcycles }) => {
     >
       {motorcycles.map((motorcycle) => (
         <SwiperSlide key={motorcycle.id}>
-          <div className="flex flex-col w-3/4 ml-10 items-center text-center rounded-3xl">
+          <div className="flex flex-col bg-gray-300 w-3/4 ml-10 items-center text-center rounded-3xl">
             <Link
               to={`/motorcycle-details/${motorcycle.id}`}
               onClick={() =>
@@ -48,7 +48,7 @@ const SwiperComponent = ({ motorcycles }) => {
               <h3 className="font-bold text-xl mb-2 border-b-4 border-cyan-800 border-dotted pb-4">
                 {motorcycle.name}
               </h3>
-              <p className="text-gray-500 text-base">
+              <p className="text-gray-900 text-base">
                 {motorcycle.description}
               </p>
             </div>

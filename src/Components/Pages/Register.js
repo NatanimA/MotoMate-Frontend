@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function Login() {
+const Login = () => {
   const [name, setName] = useState('');
   const [alert, setAlert] = useState('');
   const navigate = useNavigate();
@@ -21,12 +21,12 @@ function Login() {
       body: JSON.stringify(user),
     };
 
-    fetch('http://localhost:3000/api/v1/register', userData)
+    fetch('https://motomate-api.herokuapp.com/api/v1/register', userData)
       .then((response) => response.json())
       .then((data) => {
         if (data.error) {
           // User already exists, log them in
-          fetch(`http://localhost:3000/api/v1/users?name=${name}`)
+          fetch(`https://motomate-api.herokuapp.com/api/v1/users?name=${name}`)
             .then((response) => response.json())
             .then((data) => {
               localStorage.setItem('id', data[0].id);
@@ -46,7 +46,7 @@ function Login() {
           setAlert('Logged in. Redirecting to main page.');
           setTimeout(() => {
             setAlert('');
-            navigate('/motorcycles');
+            navigate('/');
             window.location.reload();
           }, 1500);
         }
@@ -85,5 +85,5 @@ function Login() {
       {alert && <span className="text-red-600 mt-2">{alert}</span>}
     </div>
   );
-}
+};
 export default Login;

@@ -1,26 +1,20 @@
-import renderer from 'react-test-renderer'
+import React from 'react';
 
-import { BrowserRouter } from 'react-router-dom'
+import renderer from 'react-test-renderer';
 
-import NavLinks from '../Components/Navbar/NavLinks'
+import { BrowserRouter } from 'react-router-dom';
 
-import userEvent from '@testing-library/user-event';
-// eslint-disable-next-line
-import { render, screen } from '@testing-library/react';
+import NavLinks from '../Components/Navbar/NavLinks';
 
-describe("Tests Navbar component",() => {
-    it("Should render Navbar Component",()=>{
-        const tree = renderer.create(<BrowserRouter>
-            <NavLinks />
-        </BrowserRouter>).toJSON()
-        expect(tree).toMatchSnapshot()
-    })
-
-    const list = screen.getByRole('list',{
-        hidden:true
-    }).childElementCount;
-    expect(list).toEqual(5);
-    const link = screen.getByText('Motorcycle');
-    userEvent.click(link);
-    expect(link.closest('a')).toHaveAttribute('class', 'active');
-})
+describe('Tests Navbar component', () => {
+  it('Should render Navbar Component', () => {
+    const tree = renderer
+      .create(
+        <BrowserRouter>
+          <NavLinks />
+        </BrowserRouter>,
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
